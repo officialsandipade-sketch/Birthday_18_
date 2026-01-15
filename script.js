@@ -1,3 +1,10 @@
+const unlock = document.getElementById("tapLayer");
+
+unlock.addEventListener("click", () => {
+    song.currentTime = 0;
+    song.play();
+    unlock.style.display = "none";
+});
 const btn   = document.getElementById("btn");
 const card  = document.getElementById("card");
 const wish  = document.getElementById("wish");
@@ -109,3 +116,4 @@ function animate(){
   requestAnimationFrame(animate);
 }
 animate();
+
